@@ -15,8 +15,11 @@ const Users = () => {
     return users.map((u) => {
       return (
         <div key={u.id}>
+          <h1>{u.id}</h1>
+          <h1>{u.first_name} {u.last_name}</h1>
           <h1>{u.email}</h1>
-          <h1>id: {u.id}</h1>
+          <h1>{u.avatar}</h1>
+          
         </div>
       );
     });
