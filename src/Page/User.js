@@ -13,12 +13,13 @@ const Users = () => {
   const renderUsers = () => {
     
     return users.map((u) => {
+      console.log(u)
       return (
         <div key={u.id}>
           <h1>{u.id}</h1>
           <h1>{u.first_name} {u.last_name}</h1>
           <h1>{u.email}</h1>
-          <h1>{u.avatar}</h1>
+          <img src={u.avatar}></img>
           
         </div>
       );
